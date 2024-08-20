@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget tracker</title>
+    <link rel="stylesheet" href="budget.css">
+</head>
+<body>
+    <h1>Money tracking web app</h1>
+    <div class="input_section">
+        <label for="category_select">category:</label>
+        <select id="category_select">
+            <option value="collage fee">collage fees</option>
+            <option value="Rent">Rent</option>
+            <option valu="transport">Transport</option>
+            <option value="Food">Food</option>
+            <option value="Shoping">Shoping</option>
+            <option value="drinks">drinks</option>
+        </select>   
+        <label for="Amount_imput">Amount</label>
+        <input type="numbers" id="Amount_imput">
+        <label for="date_input">date</label>
+        <input type="date" id="date_input">
+        <button id="add_btn">ADD</button>
+       </div>
+       <div class="expenses_list">
+        <h2>expenses_list</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="expensestable_body">
+
+            </tbody>
+            <tfoot>
+                <td>Total:</td>
+                <td id="total_amount"></td>
+                <td></td>
+                <td></td>
+            </tfoot>
+        </table>
+       </div>
+
+<script src="budget.js"></script>
+    
+</body>
+</html>
